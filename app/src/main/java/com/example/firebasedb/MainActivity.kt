@@ -2,10 +2,12 @@ package com.example.firebasedb
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.example.firebasedb.databinding.ActivityMainBinding
 //import com.example.firebaserecyclerviewkotlin.MainActivity2
@@ -25,6 +27,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var database : DatabaseReference
 
+    @RequiresApi(Build.VERSION_CODES.O)
     @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,8 +50,8 @@ class MainActivity : AppCompatActivity() {
             database = FirebaseDatabase.getInstance().getReference("Users")
 
            //val timestamp = b
-           val timestamp = ServerValue.TIMESTAMP
-              timestamp.setValue(ServerValue.TIMESTAMP)
+           val timestamp =LocalDateTime.now().toString() //  ServerValue.TIMESTAMP
+              //timestamp.setValue(ServerValue.TIMESTAMP)
           //  val timestampstring: String = timestamp.getValue(LocalDateTime.).toString()
             // val timestamp  = binding.root.ServerValue.TIMESTAMP
             val User = User(weight,height,username, bmi, timestamp)

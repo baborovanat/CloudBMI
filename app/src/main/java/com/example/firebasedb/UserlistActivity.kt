@@ -13,6 +13,7 @@ class UserlistActivity : AppCompatActivity() {
     private lateinit var dbref : DatabaseReference
     private lateinit var userRecyclerview : RecyclerView
     private lateinit var userArrayList : ArrayList<User>
+    private lateinit var recyc_adapter : MyAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +24,8 @@ class UserlistActivity : AppCompatActivity() {
         userRecyclerview.setHasFixedSize(true)
 
         userArrayList = arrayListOf<User>()
+        recyc_adapter = MyAdapter(userArrayList)
+        userRecyclerview.adapter = recyc_adapter //MyAdapter(userArrayList)
         getUserData()
 
         var btnPrevious = findViewById<Button>(R.id.btn_previous_page)
@@ -41,7 +44,7 @@ class UserlistActivity : AppCompatActivity() {
             override fun onDataChange(snapshot: DataSnapshot) {
 
                 if (snapshot.exists()){
-
+                    userArrayList.clear()
                     for (userSnapshot in snapshot.children){
 
 
@@ -49,8 +52,9 @@ class UserlistActivity : AppCompatActivity() {
                         userArrayList.add(user!!)
 
                     }
-
-                    userRecyclerview.adapter = MyAdapter(userArrayList)
+                    //val adapter = MyAdapter(userArrayList)
+                    recyc_adapter.notifyDataSetChanged()
+                    //userRecyclerview.adapter = adapter;//MyAdapter(userArrayList)
 
 
                 }
