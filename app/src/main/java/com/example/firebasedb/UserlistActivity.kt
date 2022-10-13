@@ -25,7 +25,7 @@ class UserlistActivity : AppCompatActivity() {
 
         userArrayList = arrayListOf<User>()
         recyc_adapter = MyAdapter(userArrayList)
-        userRecyclerview.adapter = recyc_adapter //MyAdapter(userArrayList)
+        userRecyclerview.adapter = recyc_adapter
         getUserData()
 
         var btnPrevious = findViewById<Button>(R.id.btn_previous_page)
@@ -52,9 +52,9 @@ class UserlistActivity : AppCompatActivity() {
                         userArrayList.add(user!!)
 
                     }
-                    //val adapter = MyAdapter(userArrayList)
+
                     recyc_adapter.notifyDataSetChanged()
-                    //userRecyclerview.adapter = adapter;//MyAdapter(userArrayList)
+
 
 
                 }

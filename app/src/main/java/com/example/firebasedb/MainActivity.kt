@@ -46,14 +46,12 @@ class MainActivity : AppCompatActivity() {
             val username = binding.username.text.toString()
             val bmi = binding.result.text.toString()
 
-           // mRef.child("timestamp").setValue(ServerValue.TIMESTAMP)
+
             database = FirebaseDatabase.getInstance().getReference("Users")
 
-           //val timestamp = b
-           val timestamp =LocalDateTime.now().toString() //  ServerValue.TIMESTAMP
-              //timestamp.setValue(ServerValue.TIMESTAMP)
-          //  val timestampstring: String = timestamp.getValue(LocalDateTime.).toString()
-            // val timestamp  = binding.root.ServerValue.TIMESTAMP
+
+           val timestamp =LocalDateTime.now().toString()
+
             val User = User(weight,height,username, bmi, timestamp)
 
             database.child(username).setValue(User).addOnSuccessListener {

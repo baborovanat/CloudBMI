@@ -19,10 +19,7 @@ class MainActivity2 : AppCompatActivity() {
 
         lateinit var recyclerbtn : Button
         recyclerbtn = findViewById(R.id.recyclerviewbtn)
-      //  recyclerbtn.setOnClickListener {
-         //   val Intent = Intent(this, UserlistActivity::class.java)
-          //  startActivity(Intent)
-      //  }
+
         recyclerbtn.setOnClickListener {
 
             var i = Intent(this,UserlistActivity::class.java)
