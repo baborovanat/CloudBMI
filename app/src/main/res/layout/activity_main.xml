@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        android:layout_marginVertical="25dp"
+        android:background="@drawable/bmi_bg"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick a username:)"
+        android:layout_marginHorizontal="30dp"
+        />
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:padding="12dp"
+        android:inputType="text"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/edit_bg"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Whats your weight in kg?"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="15dp"
+        />
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:padding="12dp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edit_bg"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Whats your height in cm?"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="15dp"
+        />
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:padding="12dp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edit_bg"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="15dp"
+        android:text="Calculate"
+        android:background="@drawable/bmi_bg"
+        android:backgroundTint="@color/pink"
+        android:textColor="#fafafa"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Your Result:"
+        android:textSize="33sp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="38sp"
+        android:textColor="#000"
+        android:background="@drawable/cut_corners"
+        />
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:background="@drawable/cut_corners"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="15dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNextPage"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-130dp"
+        android:layout_marginTop="-130dp"
+        android:background="@drawable/btn_bg"
+        android:text="+"
+        android:textColor="#fafafa" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-130dp"
+        android:background="@drawable/btn_bg"
+        android:text="save"
+        android:layout_marginBottom="-60dp"
+        android:textColor="#fafafa" />
+</LinearLayout>
