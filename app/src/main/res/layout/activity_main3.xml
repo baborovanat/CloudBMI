@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:text="What is BMI?"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="32dp"></TextView>
+
+    <TextView
+        android:layout_width="401dp"
+        android:layout_height="99dp"
+        android:text="The Body Mass Index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. It is calculated by dividing your weight (in kilograms) by the square of your height (in meters)."
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="178dp"></TextView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="351dp"
+        android:layout_height="273dp"
+        app:srcCompat="@drawable/bmiadult"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <Button
+        android:id="@+id/btnCalculator"
+        android:layout_width="265dp"
+        android:layout_height="49dp"
+        android:text="Calculator"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="590dp"></Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

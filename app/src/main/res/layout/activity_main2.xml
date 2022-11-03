@@ -12,27 +12,29 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
-        android:text="Want to view BMI history?"
+        android:layout_marginTop="444dp"
+        android:background="@drawable/view_bg"
+        android:text="Want to view your BMI history?"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/recyclerviewbtn"
         android:layout_width="360dp"
         android:layout_height="60dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="344dp"
-        android:backgroundTint="@color/teal_200"
+        android:layout_marginTop="564dp"
+        android:background="@drawable/btn_bg"
         android:text="Click here"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,8 +45,8 @@
         android:background="@drawable/btn_bg"
         android:text="@string/cout"
         android:textColor="#fafafa"
-        app:layout_constraintEnd_toEndOf="@id/recyclerviewbtn"
-        tools:layout_editor_absoluteY="646dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="646dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

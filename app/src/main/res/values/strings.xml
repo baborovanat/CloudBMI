@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">firebasedb</string>
+    <string name="app_name">BMI calculator</string>
     <string name="cout"><![CDATA[<<]]></string>
 </resources>
