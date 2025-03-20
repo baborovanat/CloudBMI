@@ -44,4 +44,4 @@ Features
 
 Feel free to fork the repository and submit pull requests for any improvements or features you'd like to add.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+📄 This project is licensed under the MIT License - see the LICENSE file for details.
