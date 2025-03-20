@@ -1,6 +1,7 @@
 ☁️ CloudBMI ☁️
 
 CloudBMI is a mobile application for calculating and tracking BMI (Body Mass Index) values. It allows users to input their height, weight, and calculates their BMI. The app stores all user data in Firebase DB and provides an interface for users to view their BMI history.
+
 Features
 
     BMI Calculation: Users can input their height and weight, and the app will calculate their BMI.
